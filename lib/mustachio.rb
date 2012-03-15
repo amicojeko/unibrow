@@ -109,6 +109,7 @@ module Mustachio
         :center_x => (adj_left + adj_right) / 2,
         :center_y => (adj_top + adj_bottom) / 2
       }
+      
     end
   end
   

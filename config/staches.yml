@@ -2,6 +2,10 @@
 # thanks to http://therantsandraves.com/?p=602 for the 'staches
 
 -
+  filename: mustache_04.png
+  vert_offset: -50
+  mouth_overlap: 50
+-
   filename: mustache_03.png
   vert_offset: 15
 -
@@ -12,3 +16,4 @@
   filename: mustache_07.png
   vert_offset: 30
   mouth_overlap: 50
+

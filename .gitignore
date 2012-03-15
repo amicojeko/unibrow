@@ -1,3 +1,5 @@
+config.ru
+
 # rcov generated
 coverage
 
