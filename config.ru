@@ -2,9 +2,6 @@ require 'rubygems'
 require 'bundler'
 Bundler.require
 
-ENV['MUSTACHIO_FACE_API_KEY'] = 'xxx'
-ENV['MUSTACHIO_FACE_API_SECRET'] = 'xxx'
-
 require File.join(File.dirname(__FILE__), 'lib', 'mustachio', 'app')
 
 map '/' do
