@@ -50,8 +50,12 @@ Magickly.dragonfly.configure do |c|
         ( face['nose']['x'] - face['mouth_center']['x'] ).to_f**2 +
         ( face['nose']['y'] - face['mouth_center']['y'] ).to_f**2
       )
+      desired_width = Math.sqrt(
+        ( face['eye_left']['x'] - face['eye_right']['x'] ).to_f**2 +
+        ( face['eye_left']['y'] - face['eye_right']['y'] ).to_f**2
+      )
       mouth_intersect = mustache['height'] - mustache['mouth_overlap']
-      scale = desired_height / mouth_intersect
+      scale = desired_width / mustache['width'] #desired_height / mouth_intersect
       
       srt_params = [
         [ mustache['width'] / 2.0, mouth_intersect - mustache['vert_offset'] ].map{|e| e.to_i }.join(','), # bottom-center of stache
