@@ -59,7 +59,7 @@ Magickly.dragonfly.configure do |c|
       
       srt_params = [
         [ mustache['width'] / 2.0, mouth_intersect - mustache['vert_offset'] ].map{|e| e.to_i }.join(','), # bottom-center of stache
-        scale, # scale
+        scale * 2.0, # scale
         rotation, # rotate
         [ (face['eye_left']['x']+face['eye_right']['x'])/2, (face['eye_left']['y']+face['eye_right']['y'])/2 ].map{|e| e.to_i }.join(',') # middle of mouth
       ]
