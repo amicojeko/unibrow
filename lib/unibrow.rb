@@ -49,7 +49,7 @@ module Unibrow
         raise ArgumentError, "A #{file_or_job.class} is not a valid argument for #face_data.  Please provide a File or a Dragonfly::Job."
       end
 
-      face_data = Mustachio.face_client.faces_detect(:file => file, :attributes => 'none')
+      face_data = Unibrow.face_client.faces_detect(:file => file, :attributes => 'none')
       face_data['photos'].first
     end
     

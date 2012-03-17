@@ -53,7 +53,7 @@
 
 	<br><br>
 	
-	<a href="bookmarklet.js">Bookmarklet!</a>
+	<a href="javascript:(function(){var URL='http://unibrow.heroku.com/magickly?mustachify=true&src=';var images=document.getElementsByTagName('img');var i;for(i=0;i<images.length;i+=1){var image=images[i];var src=image.getAttribute('src');if(image.src[0]==='/'){image.setAttribute('src',URL+encodeURIComponent(window.location.origin+src));}else if(src.match(/^https?:\/\//)){image.setAttribute('src',URL+encodeURIComponent(src));}}})();">Bookmarklet!</a>
 
     <div id='footer'>
 	E' un progetto <a href="http://pheeco.it">Pheeco</a> by <a href="http://jeko.net">Jeko</a>
