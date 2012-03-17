@@ -43,7 +43,13 @@
 		<h1>Unibrow!</h1>
     </div>
 	<!--img src='/<%= @stache_num %>?src=<%= DEMO_IMAGE %>' /-->
-    <!--h1><%= @site %>/<%= @stache_num %>?src=<em>YOUR_IMAGE_URL</em></h1-->
+    
+
+	<form action="/" method="get" accept-charset="utf-8">
+		<input type="text" name="src" value="" id="src" class="text" placeholder="paste the image address here"><input class="button" type="submit" value="Go! &rarr;">	
+	</form>
+
+	<h2>...or just call <%= @site %>/<%= @stache_num %>?src=<em>YOUR_IMAGE_URL</em></h2>
 
     <div id='footer'>
 	E' un progetto <a href="http://pheeco.it">Pheeco</a> by <a href="http://jeko.net">Jeko</a>
