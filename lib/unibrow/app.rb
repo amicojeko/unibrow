@@ -1,7 +1,7 @@
-require File.join(File.dirname(__FILE__), '..', 'mustachio')
+require File.join(File.dirname(__FILE__), '..', 'unibrow')
 require 'sinatra/base'
 
-module Mustachio
+module Unibrow
   class App < Sinatra::Base
     DEMO_IMAGE = 'http://www.librarising.com/astrology/celebs/images2/QR/queenelizabethii.jpg'
     
