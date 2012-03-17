@@ -30,7 +30,7 @@ module Mustachio
       else
         @stache_num = stache_num
         @site = Addressable::URI.parse(request.url).site
-        haml :index
+        erb :index
       end
     end
     
@@ -40,10 +40,6 @@ module Mustachio
     
     get '/test' do
       haml :test
-    end
-    
-    get '/face_api_dev_challenge' do
-      haml :face_api_dev_challenge
     end
     
   end

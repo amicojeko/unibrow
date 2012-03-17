@@ -22,7 +22,7 @@ module Mustachio
         :api_secret => (ENV['MUSTACHIO_FACE_API_SECRET'] || raise("Please set MUSTACHIO_FACE_API_SECRET."))
       )
       
-      staches = YAML.load(File.read(File.join(File.dirname(__FILE__), '..', 'config', 'staches.yml')))
+      staches = YAML.load(File.read(File.join(File.dirname(__FILE__), '..', 'config', 'brows.yml')))
       staches.map! do |stache|
         stache['vert_offset'] ||= 0
         stache['mouth_overlap'] ||= 0

@@ -1,0 +1,15 @@
+# files are expected to be under config/staches/
+# thanks to http://therantsandraves.com/?p=602 for the 'staches
+
+-
+  filename: unibrow_02.png
+  vert_offset: -50
+  mouth_overlap: 50
+-
+  filename: unibrow_01.png
+  vert_offset: -50
+  mouth_overlap: 50
+-
+  filename: unibrow_03.png
+  vert_offset: -50
+  mouth_overlap: 50
