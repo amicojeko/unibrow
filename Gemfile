@@ -20,8 +20,8 @@ group :development, :test do
   gem 'webmock', '~> 1.6', :require => 'webmock/rspec'
   gem 'vcr', '~> 1.9'
   
-  gem 'ruby-debug19', :require => 'ruby-debug', :platforms => :ruby_19
-  gem 'ruby-debug', :platforms => :ruby_18
+#  gem 'ruby-debug19', :require => 'ruby-debug', :platforms => :ruby_19
+#  gem 'ruby-debug', :platforms => :ruby_18
 end
 
 group :production do
